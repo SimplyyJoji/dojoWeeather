@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <nav>
+    <h1>DojoWeather</h1>
+    <div class="nav">
+      <a class="city" onclick="alertCity()" href="">Burbank</a>
+      <a class="city" onclick="alertCity()" href="">Chicago</a>
+      <a class="city" onclick="alertCity()" href="">Dallas</a>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="heading">
+      <h2>San Jose</h2>
+      <p>show temperature in </p>
+      <select name="temp" id="weather">
+        <option value="c">C</option>
+        <option value="f">F</option>
+      </select>
+    </div>
+    <div class="cards">
+
+      <div class="card">
+        <h2 class="day">Today</h2>
+        <img class="sky" src="/img/some_rain.png" alt="">
+        <p class="cardText">some rain</p>
+        <div class="temp">
+          <h2 class="rightTemp">23.9</h2>
+          <h2 class="leftTemp">18.3</h2>
+        </div>
+      </div>
+      <div class="card">
+        <h2 class="day">Today</h2>
+        <img class="sky" src="/img/some_sun.png" alt="">
+        <p class="cardText">some rain</p>
+        <div class="temp">
+          <h2 class="rightTemp">23.9</h2>
+          <h2 class="leftTemp">18.3</h2>
+        </div>
+      </div>
+      <div class="card">
+        <h2 class="day">Today</h2>
+        <img class="sky" src="/img/some_clouds.png" alt="">
+        <p class="cardText">some rain</p>
+        <div class="temp">
+          <h2 class="rightTemp">23.9</h2>
+          <h2 class="leftTemp">18.3</h2>
+        </div>
+      </div>
+      <div class="card">
+        <h2 class="day">Today</h2>
+        <img class="sky" src="/img/some_sun.png" alt="">
+        <p class="cardText">some rain</p>
+        <div class="temp">
+          <h2 class="rightTemp">23.9</h2>
+          <h2 class="leftTemp">18.3</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="cookieBox">
+      <h3 class="cookieHead">Stop! Cookie time</h3>
+      <div class="cookieRow">
+        <img src="/img/cookie.png" alt="">
+        <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features
+          and to analyse our traffic.
+          <a href="">Read more...</a>
+        </p>
+        <button class="cookieBtn" onclick="accepted()">I accept</button>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <script src="/app.js"></script>
+</body>
+
+</html>
